@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainviewpane" prefHeight="464.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane layoutX="147.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="77.0" prefWidth="526.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ColorPicker fx:id="colorPicker" layoutX="181.0" layoutY="27.0" />
+                  <CheckBox fx:id="fill" layoutX="290.0" layoutY="31.0" mnemonicParsing="false" text="Fill" />
+                  <Button fx:id="open" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#openClick" text="Open" />
+                  <Button fx:id="save" layoutX="91.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#saveClick" text="Save" />
+               </children>
+               </AnchorPane>
+         </top>
+         <center>
+            <ScrollPane prefHeight="398.0" prefWidth="514.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane fx:id="spritepane" />
+               </content>
+               </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
